@@ -8,6 +8,10 @@ app.use(bodyParser.json()); // needed for angular requests
 app.use(express.static('build'));
 
 /** ---------- ROUTES ---------- **/
+const workoutRouter = require('./routes/workout.router.js');
+
+
+app.use('/api/workout', workoutRouter);
 
 
 /** ---------- START SERVER ---------- **/
