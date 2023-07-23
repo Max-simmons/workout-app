@@ -1,7 +1,9 @@
 import { combineReducers } from 'redux';
-import errors from './errors.reducer';
+import bodyPartWorkoutReducer from './workout.reducer';
+
 
 const rootReducer = combineReducers({
+    bodyPartWorkoutReducer,
 
 });
 
