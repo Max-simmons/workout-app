@@ -10,12 +10,17 @@ const dispatch = useDispatch();
 const bodyPartId = params.id;
 
 useEffect(() => {
+   fetchWorkouts();
+}, [])
+
+const fetchWorkouts = () => {
     dispatch({
         type: 'FETCH_WORKOUTS',
         payload: bodyPartId
     })
-})
+}
 
+console.log('id', bodyPartId);
 
 return (
         <h2>Workouts</h2>
